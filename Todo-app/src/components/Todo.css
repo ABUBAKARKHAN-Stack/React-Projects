@@ -1,0 +1,82 @@
+body {
+  background: linear-gradient(to left, #64b3f4, #c2e59c);
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+.checkedList {
+  text-decoration: line-through;
+}
+
+.notCheckedList {
+  text-decoration: none;
+}
+
+.Logo-text,
+.link-text {
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.date-display {
+  color: #000;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.Todo-List {
+  box-shadow: 0px 0px 10px 2px #000;
+}
+
+nav {
+  box-shadow: 0px 0px 5px 1px #000;
+}
+
+.checkBtnClick {
+  transform: scale(.7) rotate(360deg);
+  transition: transform 0.3s ease;
+}
+
+
+
+/* Ensure text and form elements fit on very small screens */
+@media (max-width: 300px) {
+
+  .Logo-text ,
+  .date-display{
+    font-size: 14px !important;
+    -webkit-text-stroke-width: .7px;
+  }
+   /* {
+    font-size: 14px;
+    -webkit-text-stroke-width: .7px;
+  } */
+
+  .link-text {
+    font-size: 8px;
+    -webkit-text-stroke-width: .2px;
+  }
+
+  .Input-Task {
+    width: 95vw;
+  }
+
+  .check-Btn {
+    font-size: 20px;
+  }
+
+  .del-Btn {
+    font-size: 26px;
+  }
+  
+
+}
+
+@media (max-width : 500px) {
+  .Todo-List {
+    width: 90vw;
+  }
+  .todo-text{
+    font-size: 10px;
+  }
+}
